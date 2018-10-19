@@ -7,7 +7,7 @@
 <head>
     <link rel="stylesheet" href="webjars/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="webjars/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-    <%--<link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/favicon.ico" />--%>
+    <link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/favicon.ico" />
     <title>Hibernate Examples</title>
 </head>
 <body>

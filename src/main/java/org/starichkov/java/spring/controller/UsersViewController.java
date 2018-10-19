@@ -1,5 +1,7 @@
 package org.starichkov.java.spring.controller;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +23,15 @@ public class UsersViewController {
     @Autowired
     public void setUserService(UserService userService) {
         this.userService = userService;
+    }
+
+    @PostConstruct
+    public void init() {
+        User jediObiWanKenobi = new User("Obi-Wan", "Kenobi");
+        userService.addUser(jediObiWanKenobi);
+
+        User sithDarthVader = new User("Darth", "Vader");
+        userService.addUser(sithDarthVader);
     }
 
     @RequestMapping(value = "/")

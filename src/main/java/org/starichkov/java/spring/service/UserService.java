@@ -9,6 +9,7 @@ import java.util.Collection;
  * @since 10.09.2016
  */
 public interface UserService {
+
     void addUser(User p);
 
     void updateUser(User p);
@@ -18,5 +19,4 @@ public interface UserService {
     User getUserById(int id);
 
     void removeUser(int id);
-
 }

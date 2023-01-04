@@ -18,10 +18,11 @@ import java.util.Collection;
  */
 @Controller
 public class UsersViewController {
-    private UserService userService;
+
+    private final UserService userService;
 
     @Autowired
-    public void setUserService(UserService userService) {
+    public UsersViewController(UserService userService) {
         this.userService = userService;
     }
 
@@ -36,7 +37,6 @@ public class UsersViewController {
 
     @RequestMapping(value = "/")
     public ModelAndView getAllUsers() {
-
         Collection<String> tableHeaders = new ArrayList<>();
         tableHeaders.add("#");
         tableHeaders.add("First Name");
@@ -50,6 +50,5 @@ public class UsersViewController {
         model.addObject("users", users);
 
         return model;
-
     }
 }

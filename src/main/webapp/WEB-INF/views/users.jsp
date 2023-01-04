@@ -5,8 +5,7 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <html>
 <head>
-    <link rel="stylesheet" href="webjars/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="webjars/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="webjars/bootstrap/4.6.2/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/favicon.ico" />
     <title>Hibernate Examples</title>
 </head>

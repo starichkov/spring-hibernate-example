@@ -1,7 +1,6 @@
 package org.starichkov.java.spring.service;
 
-import org.springframework.beans.factory.annotation.Required;
-import org.starichkov.java.spring.dao.UserDAOImpl;
+import org.starichkov.java.spring.dao.UserDAO;
 import org.starichkov.java.spring.entities.User;
 
 import java.util.Collection;
@@ -12,10 +11,9 @@ import java.util.Collection;
  */
 public class UserServiceImpl implements UserService {
 
-    private UserDAOImpl userDAO;
+    private final UserDAO userDAO;
 
-    @Required
-    public void setUserDAO(UserDAOImpl userDAO) {
+    public UserServiceImpl(UserDAO userDAO) {
         this.userDAO = userDAO;
     }
 

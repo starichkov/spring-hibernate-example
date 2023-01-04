@@ -3,7 +3,6 @@ package org.starichkov.java.spring.dao;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.springframework.beans.factory.annotation.Required;
 import org.starichkov.java.spring.entities.User;
 
 import java.util.Collection;
@@ -15,10 +14,9 @@ import java.util.List;
  */
 public class UserDAOImpl implements UserDAO {
 
-    private SessionFactory sessionFactory;
+    private final SessionFactory sessionFactory;
 
-    @Required
-    public void setSessionFactory(SessionFactory sessionFactory) {
+    public UserDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 

@@ -8,7 +8,8 @@ import java.util.Collection;
  * @author Vadim Starichkov
  * @since 09.09.2016
  */
-interface UserDAO {
+public interface UserDAO {
+
     User get(int id);
 
     void create(User user);

@@ -1,7 +1,7 @@
-package org.starichkov.java.spring.service;
+package dev.starichkov.java.spring.service;
 
-import org.starichkov.java.spring.dao.UserDAO;
-import org.starichkov.java.spring.entities.User;
+import dev.starichkov.java.spring.dao.UserDAO;
+import dev.starichkov.java.spring.entities.User;
 
 import java.util.Collection;
 

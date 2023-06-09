@@ -1,4 +1,4 @@
-package org.starichkov.java.spring.entities;
+package dev.starichkov.java.spring.entities;
 
 import javax.persistence.*;
 

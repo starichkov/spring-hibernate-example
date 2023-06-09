@@ -1,9 +1,9 @@
-package org.starichkov.java.spring.dao;
+package dev.starichkov.java.spring.dao;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.starichkov.java.spring.entities.User;
+import dev.starichkov.java.spring.entities.User;
 
 import java.util.Collection;
 import java.util.List;

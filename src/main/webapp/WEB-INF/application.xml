@@ -17,7 +17,7 @@
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="packagesToScan" value="org.starichkov.java.spring.entities"/>
+        <property name="packagesToScan" value="dev.starichkov.java.spring.entities"/>
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
@@ -27,11 +27,11 @@
         </property>
     </bean>
 
-    <bean id="userDao" class="org.starichkov.java.spring.dao.UserDAOImpl">
+    <bean id="userDao" class="dev.starichkov.java.spring.dao.UserDAOImpl">
         <constructor-arg name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
-    <bean id="userService" class="org.starichkov.java.spring.service.UserServiceImpl">
+    <bean id="userService" class="dev.starichkov.java.spring.service.UserServiceImpl">
         <constructor-arg name="userDAO" ref="userDao"/>
     </bean>
 
@@ -57,7 +57,7 @@
 
     <!-- Scans the classpath for annotated components that will be auto-registered as Spring beans.
      For example @Controller and @Service. Make sure to set the correct base-package-->
-    <context:component-scan base-package="org.starichkov.java.spring"/>
+    <context:component-scan base-package="dev.starichkov.java.spring"/>
 
     <!-- Configures the annotation-driven Spring MVC Controller programming model.
     Note that, with Spring 3.0, this tag works in Servlet MVC only!  -->

@@ -1,6 +1,6 @@
 package dev.starichkov.java.spring.entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 /**
  * @author Vadim Starichkov

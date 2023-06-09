@@ -1,16 +1,16 @@
 package dev.starichkov.java.spring.controller;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 
 import dev.starichkov.java.spring.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import dev.starichkov.java.spring.service.UserService;
 
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * @author Vadim Starichkov
@@ -35,20 +35,13 @@ public class UsersViewController {
         userService.addUser(sithDarthVader);
     }
 
-    @RequestMapping(value = "/")
-    public ModelAndView getAllUsers() {
-        Collection<String> tableHeaders = new ArrayList<>();
-        tableHeaders.add("#");
-        tableHeaders.add("First Name");
-        tableHeaders.add("Last Name");
-
+    @GetMapping("/")
+    public String getAllUsers(Model model) {
         Collection<User> users = userService.listUsers();
 
-        // show users.jsp
-        ModelAndView model = new ModelAndView("users");
-        model.addObject("tableHeaders", tableHeaders);
-        model.addObject("users", users);
+        model.addAttribute("tableHeaders", List.of("#", "First Name", "Last Name"));
+        model.addAttribute("users", users);
 
-        return model;
+        return "users";
     }
 }

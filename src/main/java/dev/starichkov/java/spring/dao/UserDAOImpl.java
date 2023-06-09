@@ -47,7 +47,7 @@ public class UserDAOImpl implements UserDAO {
     public void update(User user) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.update(user);
+        session.merge(user);
         transaction.commit();
         session.close();
     }

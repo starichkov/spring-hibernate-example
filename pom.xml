@@ -14,19 +14,20 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <java.version>17</java.version>
-        <spring.version>6.0.9</spring.version>
+        <spring.version>6.0.15</spring.version>
 
         <bootstrap.css.version>4.6.2</bootstrap.css.version>
         <jquery.version>3.6.4</jquery.version>
-        <hibernate.version>6.2.4.Final</hibernate.version>
-        <postgresql.version>42.6.0</postgresql.version>
+        <hibernate.version>6.2.17.Final</hibernate.version>
+        <postgresql.version>42.7.1</postgresql.version>
 
         <jakarta.annotation-api.version>2.1.1</jakarta.annotation-api.version>
+        <jakarta.servlet.jsp.jstl-api.version>3.0.0</jakarta.servlet.jsp.jstl-api.version>
         <jakarta.servlet.jsp.jstl.version>3.0.1</jakarta.servlet.jsp.jstl.version>
 
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
-        <maven-dependency-plugin.version>3.5.0</maven-dependency-plugin.version>
-        <maven-war-plugin.version>3.3.2</maven-war-plugin.version>
+        <maven-dependency-plugin.version>3.6.1</maven-dependency-plugin.version>
+        <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
     </properties>
 
     <dependencies>
@@ -76,6 +77,11 @@
             <groupId>jakarta.annotation</groupId>
             <artifactId>jakarta.annotation-api</artifactId>
             <version>${jakarta.annotation-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+            <version>${jakarta.servlet.jsp.jstl-api.version}</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish.web</groupId>

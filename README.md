@@ -13,9 +13,9 @@ It also shows the old way of configuring Spring Context for deployable `.war` - 
 
 | Piece of tech | Version |
 |---------------|---------|
-| Java          | 17      |
-| Spring        | 6.0.x   |
-| Hibernate     | 5.6.x   |
+| Java          | 21      |
+| Spring        | 6.1.x   |
+| Hibernate     | 6.6.x   |
 | Tomcat        | 10.0.x  |
 | Wildfly       | 27.0.x  |
 
@@ -55,12 +55,12 @@ Even with this old-style example, I will still suggest you to use Docker to run 
 This was my container:
 
 ```shell
-docker run -d --name postgres15 \
+docker run -d --name postgres17a \
       -e POSTGRES_USER=REPLACE_WITH_ACTUAL_USER \
       -e POSTGRES_PASSWORD=REPLACE_WITH_ACTUAL_PASSWORD \
       --network=localnet \
       -p 5432:5432 \
-      postgres:15-alpine
+      postgres:17.2-alpine3.21
 ```
 
 #### Schema and table

@@ -14,11 +14,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <java.version>21</java.version>
-        <spring.version>6.2.8</spring.version>
+        <spring.version>6.2.10</spring.version>
 
         <bootstrap.css.version>5.3.7</bootstrap.css.version>
         <jquery.version>3.7.1</jquery.version>
-        <hibernate.version>6.6.19.Final</hibernate.version>
+        <hibernate.version>6.6.26.Final</hibernate.version>
         <postgresql.version>42.7.7</postgresql.version>
 
         <jakarta.annotation-api.version>3.0.0</jakarta.annotation-api.version>

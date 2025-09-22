@@ -14,23 +14,23 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <java.version>21</java.version>
-        <spring.version>6.2.10</spring.version>
+        <spring.version>6.2.11</spring.version>
 
-        <bootstrap.css.version>5.3.7</bootstrap.css.version>
+        <bootstrap.css.version>5.3.8</bootstrap.css.version>
         <jquery.version>3.7.1</jquery.version>
         <hibernate.version>6.6.26.Final</hibernate.version>
-        <postgresql.version>42.7.7</postgresql.version>
+        <postgresql.version>42.7.8</postgresql.version>
 
         <jakarta.annotation-api.version>3.0.0</jakarta.annotation-api.version>
         <jakarta.servlet.jsp.jstl-api.version>3.0.2</jakarta.servlet.jsp.jstl-api.version>
         <jakarta.servlet.jsp.jstl.version>3.0.1</jakarta.servlet.jsp.jstl.version>
 
-        <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
         <maven-dependency-plugin.version>3.8.1</maven-dependency-plugin.version>
         <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
 
         <!-- 3-rd party Maven plugins -->
-        <maven.versions.plugin.version>2.18.0</maven.versions.plugin.version>
+        <maven.versions.plugin.version>2.19.1</maven.versions.plugin.version>
     </properties>
 
     <dependencies>
